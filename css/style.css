@@ -18,13 +18,10 @@ body{
     margin-bottom: 30px;
     border-left: 1px solid white;
 }
-.layout{
-    background-color: darkgrey;
-    height: 100vh;
-}
 .container{
     display: flex;
 }
+
 .sidebar{
     width: 280px;
     background-color: black;
@@ -43,7 +40,7 @@ body{
 }
 .navbar{
     display:flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
     align-items: center;
     background-color: rgb(19, 19, 26);
     height: 100px;
@@ -85,10 +82,15 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 100px;
 }
 .bottom-nav{
     list-style: none;
     display: flex;
     gap: 5px;
-
+}
+.main-content{
+    width: calc(100vw - 280px);
+    height: calc(100vh - 200px);
+    overflow: auto;
 }
